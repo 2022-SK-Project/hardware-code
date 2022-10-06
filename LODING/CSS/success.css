@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 360px;
+    height: 780px;
+    background-color: rgb(244, 244, 244);
+
+    /* 실선 */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 172px;
+    height: 172px;
+    margin-bottom: 17px;
+}
+p{
+    font-size: 18px;
+}

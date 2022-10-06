@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.div{
+    width: 360px;
+    height: 756px;
+    background-color: rgb(244, 244, 244);
+
+    /* 실선 */
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* 마이페이지 */
+.mypage{
+    padding-bottom: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.mypage > a > i{
+    margin: 6px 0 0 37px;
+    float: left;
+}
+h4{
+    font-size: 20px;
+    padding: 32px 0 0 100px;
+}
+
+/* 수정 창 */
+.input-box{
+    height: 480px;
+}
+.box{
+    margin: 20px 0;
+}
+.box > small{
+    font-size: 12px;
+    float: left;
+    padding-left: 30px;
+    color: black;
+}
+.box > input{
+    width: 304px;
+    height: 45px;
+    font-size: 15px;
+    padding-left: 5px;
+    color: black;
+    border: 0px;
+    border-bottom: 1px solid rgba(174, 174, 174, 1);
+    background-color: transparent;
+}
+.box > input::placeholder{
+    color: rgba(190, 190, 190, 1);
+    font-size: 15px;
+}
+
+.submit{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}

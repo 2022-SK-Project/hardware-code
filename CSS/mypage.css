@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.div{
+    width: 360px;
+    height: 756px;
+    background-color: rgb(244, 244, 244);
+
+    /* 실선 */
+    border: 1px solid black;
+    position: relative;
+    /* display: none; */
+}
+
+/* 알림창 */
+#alert-bg {
+    position: absolute;
+    z-index: 999;
+
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.close{
+    display: none;
+}
+#alert{
+    width: 250px;
+    height: 130px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    position: absolute;
+    top: 35%;
+    left: 55px;
+}
+.text-box{
+    margin: 28px 0 10px 0;
+    border-bottom: 1px solid #dadada;
+}
+.text-box > p{
+    font-size: 15px;
+    margin-top: 3px;
+}
+.text-box > .p{
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+.a-text > a{
+    width: 125px;
+    height: 43px;
+    color: black;
+    margin: 0 45px;
+    font-size: 15px;
+}
+.white{
+    background-color: white;
+}
+
+/* 마이페이지 */
+.mypage{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.mypage > a > i{
+    margin: 6px 0 0 37px;
+    float: left;
+}
+h4{
+    font-size: 20px;
+    padding: 32px 0 0 90px;
+}
+.section{
+    height: 160px;
+    margin: 60px 30px 15px 30px;
+}
+
+/* 문구, 칩 */
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box > p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-box > a{
+    width: 64px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(218, 218, 218, 1);
+    font-size: 12px;
+    background-color: white;
+    text-align: center;
+    line-height: 2.5;
+}
+button{
+    width: 64px;
+    height: 30px;
+    border-radius: 25px;
+    border: 1px solid rgba(218, 218, 218, 1);
+    font-size: 12px;
+    background-color: white;
+}
+.section > hr{
+    margin: 16px 0 18px 0;
+    border: 0px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+small{
+    font-size: 16px;
+    color: rgba(68, 68, 68, 1);
+}
+b{
+    color: #FF2121;
+    font-size: 40px;
+}
+
+/* 각종기능 */
+#option{
+    height: 272px;
+    padding-top: 5px;
+    padding: 5px 30px 0 30px;
+}
+.box{
+    margin: 22px 0;
+}
+.box > img{
+    float: left;
+}
+.box > a{
+    font-size: 17px;
+    margin-left: 34px;
+}
+
+/* 가로줄 */
+#option > hr{
+    margin: 16px 0 18px 0;
+    border: 0px;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+/* on / off 버튼 */
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 17px;
+    margin: 0 10px;
+    left: 40%;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.switch > input{
+    display: none;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: 1.3px;
+    bottom: 1px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+input:checked + .slider{
+    background-color: #FA5252;
+}
+input:checked + .slider::before{
+    transform: translateX(12px);
+}

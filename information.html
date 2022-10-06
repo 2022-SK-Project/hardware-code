@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원정보</title>
+    <link rel="stylesheet" href="./CSS/information.css">
+    <script src="https://kit.fontawesome.com/2d62f67ec1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="div">
+        <!-- 제목 -->
+        <div class="mypage">
+            <a href="./mypage.html"><i class="fa-solid fa-angle-left"></i></a>
+            <h4>회원정보</h4>
+        </div>
+
+        <form action="./mypage.html" method="get">
+            <div class="box">
+                <small>이름</small>
+                <br>
+                <input type="text" maxlength="5" placeholder="이름을 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>이메일</small>
+                <br>
+                <input type="email" maxlength="30" placeholder="이메일을 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>비밀번호</small>
+                <br>
+                <input type="password" maxlength="10" placeholder="비밀번호를 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>휴대폰 번호</small>
+                <br>
+                <input type="tel" maxlength="15" placeholder="휴대폰 번호를 입력해주세요." required>
+            </div>
+
+            <div class="box">
+                <small>환불계좌</small>
+                <br>
+                <input type="text" maxlength="40" placeholder="ex) 홍길동 (길동뱅크 0000-0000-0000-0)" required>
+            </div>
+
+            <input class="submit" type="submit" value="저장">
+        </form>
+    </div>
+</body>
+</html>
